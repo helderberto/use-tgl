@@ -33,7 +33,7 @@
 
 ## Usage
 
-To start using the `use-tgl` in your project, first install in your project:
+Install `use-tgl` in your project with the following:
 
 `yarn add use-tgl` or `npm install use-tgl`
 
@@ -53,7 +53,11 @@ export function App() {
       .catch((err) => off());
   }, []);
 
-  return enabled ? 'Enabled' : 'Disabled';
+  return enabled ? (
+    <div>
+      <button type="button" onClick={switch}>Switch Toggle</button>
+    </div>
+  ) : 'Disabled';
 }
 ```
 
