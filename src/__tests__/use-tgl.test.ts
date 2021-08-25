@@ -19,10 +19,10 @@ describe('useTgl', () => {
     expect(result.current.enabled).toBeFalsy();
   });
 
-  it('should update.enabled when trigger switch()', () => {
+  it('should update enabled value when trigger toggle()', () => {
     const { result } = renderHook(() => useTgl());
 
-    act(() => result.current.switch());
+    act(() => result.current.toggle());
 
     expect(result.current.enabled).toBeFalsy();
   });

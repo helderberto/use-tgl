@@ -4,19 +4,19 @@ interface UseTgl {
   enabled: boolean;
   on(): void;
   off(): void;
-  switch(): void;
+  toggle(): void;
 }
 
-type initialState = boolean;
+type optionalInitialvalue = boolean;
 
-export function useTgl(enabled: initialState = true): UseTgl {
+export function useTgl(enabled: optionalInitialvalue = true): UseTgl {
   const [state, setState] = useState(enabled);
 
   const handlers = useMemo(
     () => ({
       on: () => setState(true),
       off: () => setState(false),
-      switch: () => setState(!state),
+      toggle: () => setState(!state),
     }),
     [],
   );
