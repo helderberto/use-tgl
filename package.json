@@ -1,0 +1,88 @@
+{
+  "name": "use-tgl",
+  "version": "0.1.0",
+  "description": "🎩 useTgl is a React Hook toggle component visibility.",
+  "main": "dist/use-is-mounted-ref.cjs.js",
+  "module": "dist/use-is-mounted-ref.es.js",
+  "jsnext:main": "dist/use-is-mounted-ref.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "format": "prettier --write .",
+    "build:clean": "rm -rf ./dist",
+    "build": "npm run build:clean && rollup -c",
+    "prepare": "husky install",
+    "test:tsc": "tsc",
+    "test:tsc:watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "validate": "npm run lint && npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.15.0",
+    "@babel/preset-react": "7.14.5",
+    "@babel/register": "7.15.3",
+    "@babel/runtime": "7.15.3",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
+    "@testing-library/react-hooks": "7.0.1",
+    "@types/jest": "27.0.1",
+    "@types/react": "17.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "27.0.6",
+    "babel-loader": "8.2.2",
+    "babel-preset-minify": "0.5.1",
+    "commitizen": "4.2.4",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "2.24.1",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "^7.0.2",
+    "jest": "27.0.6",
+    "lint-staged": "^11.1.2",
+    "prettier": "2.3.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-test-renderer": "17.0.2",
+    "rollup": "2.56.3",
+    "rollup-plugin-replace": "2.2.0",
+    "rollup-plugin-typescript2": "0.30.0",
+    "rollup-plugin-uglify": "6.0.4",
+    "ts-jest": "27.0.5",
+    "typescript": "4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helderburato/use-tgl.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "toggle",
+    "useTgl"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helderburato/use-tgl/issues"
+  },
+  "homepage": "https://github.com/helderburato/use-tgl#readme"
+}
