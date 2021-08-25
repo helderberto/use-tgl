@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>📦 use-tgl</h1>
+  <h1>🎩 use-tgl</h1>
 
-  <p><strong>useTgl is a React Hook</strong> to toggle component visibility.</p>
+  <p><strong>useTgl is a React Hook</strong> toggle component visibility.</p>
 
 <!-- prettier-ignore-start -->
 [![build][build-badge]][build]
