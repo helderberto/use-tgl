@@ -1,6 +1,6 @@
 {
   "name": "use-tgl",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "🎩 useTgl is a React Hook toggle component visibility.",
   "main": "dist/use-is-mounted-ref.cjs.js",
   "module": "dist/use-is-mounted-ref.es.js",
