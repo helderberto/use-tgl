@@ -44,20 +44,22 @@ Install `use-tgl` in your project with the following:
 import useTgl from 'use-tgl';
 
 export function App() {
-  const { enabled, on, off, switch } = useTgl(false); // => Optional start value
+  const { state, on, off, switch } = useTgl(true); // => Optional start value
 
   useEffect(() => {
-    fetch('https://www.reddit.com/.json')
-      .then((response) => response.json())
-      .then(({ data }) => on())
-      .catch((err) => off());
+    switch(); // => Disable toggle on render
   }, []);
 
   return enabled ? (
-    <div>
-      <button type="button" onClick={switch}>Switch Toggle</button>
-    </div>
-  ) : 'Disabled';
+      <div>
+        <button type="button" onClick={off}>Disable</button>
+      </div>
+    ) : (
+      <div>
+        <button type="button" onClick={on}>Enable</button>
+        Current: Disabled
+      </div>
+    );
 }
 ```
 
