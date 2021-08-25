@@ -44,7 +44,7 @@ Install `use-tgl` in your project with the following:
 import useTgl from 'use-tgl';
 
 export function App() {
-  const { state, on, off, switch } = useTgl(true); // => Optional start value
+  const { enabled, on, off, switch } = useTgl(true); // => Optional start value
 
   useEffect(() => {
     switch(); // => Disable toggle on render
@@ -52,12 +52,13 @@ export function App() {
 
   return enabled ? (
       <div>
+        Enabled
         <button type="button" onClick={off}>Disable</button>
       </div>
     ) : (
       <div>
+        Disabled
         <button type="button" onClick={on}>Enable</button>
-        Current: Disabled
       </div>
     );
 }

@@ -7,24 +7,24 @@ describe('useTgl', () => {
     expect(useTgl).toBeDefined();
   });
 
-  it('should return current state as true', () => {
+  it('should return current.enabled as true', () => {
     const { result } = renderHook(() => useTgl());
 
-    expect(result.current.state).toBeTruthy();
+    expect(result.current.enabled).toBeTruthy();
   });
 
-  it('should return current state as false', () => {
+  it('should return current.enabled as false', () => {
     const { result } = renderHook(() => useTgl(false));
 
-    expect(result.current.state).toBeFalsy();
+    expect(result.current.enabled).toBeFalsy();
   });
 
-  it('should update state when trigger switch()', () => {
+  it('should update.enabled when trigger switch()', () => {
     const { result } = renderHook(() => useTgl());
 
     act(() => result.current.switch());
 
-    expect(result.current.state).toBeFalsy();
+    expect(result.current.enabled).toBeFalsy();
   });
 
   it('should turn on with on()', () => {
@@ -32,7 +32,7 @@ describe('useTgl', () => {
 
     act(() => result.current.on());
 
-    expect(result.current.state).toBeTruthy();
+    expect(result.current.enabled).toBeTruthy();
   });
 
   it('should turn off with off()', () => {
@@ -40,6 +40,6 @@ describe('useTgl', () => {
 
     act(() => result.current.off());
 
-    expect(result.current.state).toBeFalsy();
+    expect(result.current.enabled).toBeFalsy();
   });
 });

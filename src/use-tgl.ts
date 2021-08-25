@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 
 interface UseTgl {
-  state: boolean;
+  enabled: boolean;
   on(): void;
   off(): void;
   switch(): void;
@@ -9,8 +9,8 @@ interface UseTgl {
 
 type initialState = boolean;
 
-export function useTgl(initial: initialState = true): UseTgl {
-  const [state, setState] = useState(initial);
+export function useTgl(enabled: initialState = true): UseTgl {
+  const [state, setState] = useState(enabled);
 
   const handlers = useMemo(
     () => ({
@@ -21,5 +21,5 @@ export function useTgl(initial: initialState = true): UseTgl {
     [],
   );
 
-  return { state, ...handlers };
+  return { enabled: state, ...handlers };
 }
