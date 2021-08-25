@@ -7,13 +7,13 @@ describe('useTgl', () => {
     expect(useTgl).toBeDefined();
   });
 
-  it('should return current.enabled as true', () => {
+  it('should returns enabled as true', () => {
     const { result } = renderHook(() => useTgl());
 
     expect(result.current.enabled).toBeTruthy();
   });
 
-  it('should return current.enabled as false', () => {
+  it('should returns enabled as false', () => {
     const { result } = renderHook(() => useTgl(false));
 
     expect(result.current.enabled).toBeFalsy();
