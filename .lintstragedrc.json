@@ -1,9 +1,4 @@
 {
-  "src/**/*.{ts,tsx,json,js}": [
-    "eslint",
-    "prettier --write"
-  ],
-  "src/**/*.{ts,js}": [
-    "jest --bail --findRelatedTests"
-  ]
+  "src/**/*.{ts,tsx,json,js}": ["eslint", "prettier --write"],
+  "src/**/*.{ts,js}": ["jest --bail --findRelatedTests"]
 }
