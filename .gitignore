@@ -2,4 +2,5 @@ node_modules
 coverage
 dist
 package-lock.json
+.eslintcache
 .DS_Store
