@@ -1,16 +1,18 @@
-import { useState, useMemo } from 'react';
+import { SetStateAction, Dispatch, useState, useMemo } from 'react';
 
-interface UseTgl {
+interface ReturnType {
   enabled: boolean;
-  on(): void;
-  off(): void;
-  toggle(): void;
+  on: () => void;
+  off: () => void;
+  toggle: () => void;
 }
+
+type HandleState = [boolean, Dispatch<SetStateAction<boolean>>];
 
 type optionalInitialvalue = boolean;
 
-export function useTgl(enabled: optionalInitialvalue = true): UseTgl {
-  const [state, setState] = useState(enabled);
+export function useTgl(enabled: optionalInitialvalue = true): ReturnType {
+  const [state, setState]: HandleState = useState(enabled);
 
   const handlers = useMemo(
     () => ({
