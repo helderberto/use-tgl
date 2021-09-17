@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import { useTgl } from '../use-tgl';
+import useTgl from '../use-tgl';
 
 describe('useTgl', () => {
   it('shallow validate if useTgl is defined', () => {

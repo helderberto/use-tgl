@@ -1,1 +1,1 @@
-export { useTgl } from './use-tgl';
+export { default } from './use-tgl';
