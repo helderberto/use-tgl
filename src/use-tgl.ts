@@ -11,7 +11,7 @@ type HandleState = [boolean, Dispatch<SetStateAction<boolean>>];
 
 type optionalInitialvalue = boolean;
 
-export function useTgl(enabled: optionalInitialvalue = true): ReturnType {
+function useTgl(enabled: optionalInitialvalue = true): ReturnType {
   const [state, setState]: HandleState = useState(enabled);
 
   const handlers = useMemo(
@@ -25,3 +25,5 @@ export function useTgl(enabled: optionalInitialvalue = true): ReturnType {
 
   return { enabled: state, ...handlers };
 }
+
+export default useTgl;
