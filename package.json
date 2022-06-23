@@ -21,8 +21,7 @@
     "prepare": "husky install",
     "test:tsc": "tsc",
     "test:tsc:watch": "tsc --watch",
-    "prepublishOnly": "npm run build",
-    "validate": "npm run lint && npm run test && npm run build"
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": "^16.0.0"
