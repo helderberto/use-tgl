@@ -76,11 +76,11 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Bugs and Sugestions
 
-Report bugs or do suggestions using the [issues](https://github.com/helderburato/use-tgl/issues).
+Report bugs or do suggestions using the [issues](https://github.com/helderberto/use-tgl/issues).
 
 ## License
 
-[MIT License](LICENSE) © [helderburato](https://helderburato.com)
+[MIT License](LICENSE) © [helderberto](https://helderberto.com)
 
 <!-- prettier-ignore-start -->
 [version-badge]: https://img.shields.io/npm/v/use-tgl.svg?style=flat-square
@@ -88,7 +88,7 @@ Report bugs or do suggestions using the [issues](https://github.com/helderburato
 [downloads-badge]: https://img.shields.io/npm/dm/use-tgl.svg?style=flat-square
 [npmtrends]: http://www.npmtrends.com/use-tgl
 [license-badge]: https://img.shields.io/npm/l/use-tgl.svg?style=flat-square
-[license]: https://github.com/helderburato/use-tgl/blob/master/LICENSE
-[build]: https://github.com/helderburato/use-tgl/actions
-[build-badge]: https://github.com/helderburato/use-tgl/actions/workflows/ci.yml/badge.svg
+[license]: https://github.com/helderberto/use-tgl/blob/master/LICENSE
+[build]: https://github.com/helderberto/use-tgl/actions
+[build-badge]: https://github.com/helderberto/use-tgl/actions/workflows/ci.yml/badge.svg
 <!-- prettier-ignore-end -->

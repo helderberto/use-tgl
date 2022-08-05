@@ -70,7 +70,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helderburato/use-tgl.git"
+    "url": "git+https://github.com/helderberto/use-tgl.git"
   },
   "keywords": [
     "react",
@@ -81,9 +81,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helderburato/use-tgl/issues"
+    "url": "https://github.com/helderberto/use-tgl/issues"
   },
-  "homepage": "https://github.com/helderburato/use-tgl#readme",
+  "homepage": "https://github.com/helderberto/use-tgl#readme",
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --cache --fix"
   }
