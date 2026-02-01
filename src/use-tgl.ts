@@ -18,7 +18,7 @@ function useTgl(enabled: optionalInitialvalue = true): ReturnType {
     () => ({
       on: () => setState(true),
       off: () => setState(false),
-      toggle: () => setState(!state),
+      toggle: () => setState((prev) => !prev),
     }),
     [],
   );
