@@ -35,7 +35,7 @@
 
 Install `use-tgl` in your project with the following:
 
-`npm install use-tgl`
+`npm install use-tgl` or `yarn add use-tgl`
 
 <details open>
 <summary><strong>Simplify component toggle:</strong></summary>
