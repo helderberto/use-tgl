@@ -1,4 +1,5 @@
-import { renderHook, act } from '@testing-library/react-hooks';
+import { renderHook, act } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 
 import useTgl from '../use-tgl';
 
