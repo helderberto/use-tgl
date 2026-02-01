@@ -1,6 +1,7 @@
 import replace from 'rollup-plugin-replace';
-import { uglify } from 'rollup-plugin-uglify';
+import terser from '@rollup/plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
+import ts from 'typescript';
 import pkg from './package.json';
 
 const mergeAll = (objs) => Object.assign({}, ...objs);
@@ -20,7 +21,7 @@ const globals = { react: 'React' };
 
 const commonPlugins = [
   typescript({
-    typescript: require('typescript'),
+    typescript: ts,
   }),
 ];
 
@@ -80,7 +81,7 @@ const prodUmdConfig = mergeAll([
       replace({
         'process.env.NODE_ENV': JSON.stringify('production'),
       }),
-      uglify({
+      terser({
         compress: {
           pure_getters: true,
           unsafe: true,
