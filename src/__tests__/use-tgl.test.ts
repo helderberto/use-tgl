@@ -42,4 +42,16 @@ describe('useTgl', () => {
 
     expect(result.current.enabled).toBeFalsy();
   });
+
+  it('should handle rapid successive toggles', () => {
+    const { result } = renderHook(() => useTgl(false));
+
+    act(() => {
+      result.current.toggle();
+      result.current.toggle();
+      result.current.toggle();
+    });
+
+    expect(result.current.enabled).toBeTruthy();
+  });
 });
